@@ -6,8 +6,9 @@
 
    function managefAttempts(){
         attempt--;
-        attempts.innerHTML=`you have only ${attempt} remaining`
-        console.log(attempts)
+        // attempt.style.color="red";
+        attempts.innerHTML=`You have only (${attempt}) remaining!`
+        // console.log(attempts);
    }
 
    var attempt = 5;
@@ -40,12 +41,8 @@
         enterButton.disabled = true; // Disable button when out of attempts
     }
     
-    
+
    }
    enterButton.addEventListener('click',checkNumber);
-//    aginButton.addEventListener('click',function()
-//    {
-//     location.reload();
-//    }
-//    )
+
 
